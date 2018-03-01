@@ -16,8 +16,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     borderWidth: 4,
-    borderColor: 'blue',
-
+    borderColor: 'blue'
   },
   title: {
     flex: 0.1,
@@ -53,7 +52,7 @@ class App extends Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={{flex:1}} style={styles.container}>
+      <ScrollView bounces={false} contentContainerStyle={{flex:1}} style={styles.container}>
         <Title style={styles.title} title="Todo List"/>
         <Input style={styles.input} onAdd={(text) => {
             //var action = actionCreators.addItem(text);
